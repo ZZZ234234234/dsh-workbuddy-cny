@@ -6,6 +6,11 @@
 
 [English](./README.md) | 中文
 
+> [!WARNING]
+> **默认换算率已知偏低（大约只有真值的一半）。** 它是在 WorkBuddy 桌面端同时后台消耗积分的机器上标定的，分母被污染了。证据与修正进展见 [#1](https://github.com/ZZZ234234234/dsh-workbuddy-cny/issues/1)。
+>
+> 插件本身不受影响 —— 有问题的只是标定数字。如果你现在就需要一个准确的数，请自行在 `cordis.patch.yml` 里设置 `cnyPerCredit`，或退出 WorkBuddy 桌面端后用 `tools/measure-rate.mjs` 在干净窗口上重测。
+
 把两种余额放在 DeepSeek Harness 侧栏的同一行里 —— 并在它们之间做换算：
 
 ```

@@ -6,6 +6,11 @@
 
 English | [中文](./README.zh.md)
 
+> [!WARNING]
+> **The default conversion rate is known to be too low (roughly half).** It was measured on a machine where the WorkBuddy desktop app was also consuming credits in the background, so the denominator was inflated. See [#1](https://github.com/ZZZ234234234/dsh-workbuddy-cny/issues/1) for the evidence and the correction in progress.
+>
+> The plugin itself is unaffected — only the calibration number is in question. If you need an accurate figure today, set `cnyPerCredit` yourself in `cordis.patch.yml`, or close the WorkBuddy app and run `tools/measure-rate.mjs` on a clean window.
+
 Put both purses on one line in the DeepSeek Harness sidebar — and convert between them:
 
 ```
