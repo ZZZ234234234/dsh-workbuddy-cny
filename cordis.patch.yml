@@ -1,0 +1,5 @@
+# Your patch layer entry for this plugin.
+# Registers the bundle without touching the profile's default model.
+- insert:
+    - id: workbuddy-cny
+      name: dsh-workbuddy-cny
